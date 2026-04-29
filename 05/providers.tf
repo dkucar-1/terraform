@@ -3,11 +3,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 6.0"
-    }
-    random = {
-      source  = "hashicorp/random"
-      version = "~> 3.0"
+      version = "~> 5.0"
     }
   }
 }
@@ -16,9 +12,9 @@ provider "aws" {
   region = "us-east-2"
   default_tags {
     tags = {
-      Name        = "06-s3-website"
+      Name        = "06-networking"
       Environment = "prod"
-      Project     = "Terraform S3"
+      Project     = "Terraform Networking"
     }
   }
 }
