@@ -21,7 +21,7 @@ resource "aws_vpc_security_group_ingress_rule" "https" {
 }
 
 resource "aws_instance" "nginx_instance" {
-  ami                         = "ami-0f62bd5258b0cb717 # NGINX on Amazon Linux 2"
+  ami                         = "ami-0f62bd5258b0cb717" # NGINX on Amazon Linux 2"
   associate_public_ip_address = true
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.public_subnet.id
