@@ -21,3 +21,9 @@ variable "ec2_volume_config" {
     type = "gp3"
   }
 }
+
+variable "my_sensitive_variable" {
+  description = "This is a sensitive variable."
+  type        = string
+  sensitive   = true
+}
